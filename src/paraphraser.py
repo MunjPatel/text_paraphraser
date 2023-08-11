@@ -126,24 +126,3 @@ def paraphrase(text, mode, lang):
         return text
     else:
         return paraphrase_text
-
-
-text = """
-Imagine you have a magical game that helps you make decisions. Let`s say you're trying to figure out the best way to predict something, like how much money you might make selling lemonade or whether a cute animal is a dog or a cat. This magical game is called a "Decision Tree."
-
-Decision Tree Regression:
-Imagine you want to know how much money you'll make selling lemonade on a hot day. You start with a big tree at the top, like a treehouse. At the top, you ask the question, "Is it a very hot day?" If the answer is yes, you follow the "Yes" branch, and if it's not very hot, you follow the "No" branch.
-
-Now, you're on another branch and you ask, "Did I make a lot of lemonade?" If you made a lot, you go one way; if you didn't make much, you go the other way. Each time you ask a question, you follow a branch until you reach the end of a branch. Finally, you find a box with an answer. That answer is how much money you'll make selling lemonade on that day!
-
-Decision Tree Classification:
-Imagine you're at the zoo and you see lots of cute animals. You want to know if an animal is a dog or a cat. You start with a big tree, like a magic animal guide. At the top, you ask, "Does it have pointy ears?" If the animal has pointy ears, you follow the "Yes" branch; if not, you follow the "No" branch.
-
-Now you're on another branch and you ask, "Does it wag its tail a lot?" If it does, you follow one path, and if it doesn't, you follow another. Just like before, each time you ask a question, you follow a branch until you reach a box with an answer. In this case, the answer will tell you whether the cute animal is a dog or a cat!
-
-So, in simple words, a decision tree is like a game where you keep asking questions and following paths until you get your answer. It helps you make predictions or decide things based on the information you have. Just like exploring a magical forest of decisions!
-"""
-
-results = paraphrase(text, mode=2, lang='gu')
-
-print(results)

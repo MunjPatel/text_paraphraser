@@ -26,7 +26,9 @@ with st.form("paraphrase_form"):
             st.error('Please enter some text')
         selected_lang = st.selectbox("Select paraphrase language: ", supported_langs)
         selected_mode = st.selectbox("Select mode", mode_name)
-        submit_button = st.form_submit_button("Submit")
+        submit_button_placeholder = st.empty()
+        submit_button = submit_button_placeholder.form_submit_button("Submit")
+        # submit_button = st.form_submit_button("Submit")
 
 if submit_button and len(input_text) != 0:
     # st.markdown("<h2> style = 'text-align: justify")

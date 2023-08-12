@@ -91,7 +91,7 @@ class Paraphraser:
                 replace = [("<span class='sw'>", ""), ("</span>", ""), ("<b>", ""),
                            ("</b>", ""), ("<br>", ""), ("</br>", "")]
                 [text := text.replace(a, b) for a, b in replace]
-                paraphrased_text = text
+                paraphrased_text = text.strip()
             except HTTPError:
                 connection_errors.append(HTTPError("Client Error Occured."))
             except URLError:

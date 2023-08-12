@@ -1,7 +1,8 @@
 import streamlit as st
 from src.paraphraser import supported_langs, paraphrase
 
-st.markdown("<h2 style='text-align: center; color: grey;'>Text paraphraser</h2>", unsafe_allow_html=True)
+st.markdown("""<h3 style='text-align: center; color: grey;'>Text paraphraser</h3>""", unsafe_allow_html=True)
+
 hide_streamlit_style = """
         <style>
         #MainMenu {visibility: hidden;}
@@ -27,7 +28,6 @@ with st.form("paraphrase_form"):
         submit_button = st.form_submit_button("Submit")
 
 if submit_button and len(input_text) != 0:
-    # st.markdown("<h2> style = 'text-align: justify")
     mystyle = """
     <style>
         p {

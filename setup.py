@@ -14,10 +14,5 @@ setup(
     ],
     classifiers=[
         "Programming Language::Python"
-        ],
-    entry_points = {
-        'pytest11':[
-            'tox_tested_package = tox_tested_package.fixtures'
         ]
-    }
 )

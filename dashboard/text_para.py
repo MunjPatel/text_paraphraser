@@ -19,6 +19,8 @@ mode_name = [str(mode_name) for mode_name in mode.keys()]
 with st.form("paraphrase_form"):
     with st.sidebar:
         input_text = st.text_area("Enter your text here: ", height = 100)
+        if not input_text:
+            st.error('Please enter some text')
         selected_lang = st.selectbox("Select paraphrase language: ", supported_langs)
         selected_mode = st.selectbox("Select mode", mode_name)
         submit_button = st.form_submit_button("Submit")

@@ -9,7 +9,7 @@ from requests.exceptions import JSONDecodeError, ConnectTimeout, ConnectionError
 
 
 def langs():
-    with open("artifacts\supported_langs.json", "r") as supported_languages:
+    with open("text_paraphraser/artifacts/supported_langs.json", "r") as supported_languages:
         langs = json.load(supported_languages)
     return langs
 

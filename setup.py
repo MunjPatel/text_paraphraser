@@ -8,9 +8,9 @@ setup(
     description="A simple package which can be used for paraphrasing a given text in multiple languages.",
     packages=find_packages(),
     install_requires=[
-    "fake_useragent",
-    "my_fake_useragent",
-    "requests"
+    "Requests",
+    "setuptools",
+    "streamlit"
     ],
     classifiers=[
         "Programming Language::Python"

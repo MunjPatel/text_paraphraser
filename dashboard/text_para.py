@@ -36,5 +36,7 @@ if submit_button and len(input_text) != 0:
     </style>
     """
     paraphrase_result = paraphrase(text=input_text, mode = mode[selected_mode], lang=supported_langs[selected_lang])
-    st.markdown(mystyle, unsafe_allow_html=True)
-    st.write(paraphrase_result)
+    paraphrase_markdown = f"{mystyle}\n{paraphrase_result}"
+    st.markdown(paraphrase_markdown, unsafe_allow_html = True)
+    # st.markdown(mystyle, unsafe_allow_html=True)
+    # st.write(paraphrase_result)

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import requests
+import os
 import json
 import urllib.parse
 from paraphraser_exceptions.para_exceptions import InvalidModeError, LanguageNotSupportedError
@@ -9,9 +10,15 @@ from requests.exceptions import JSONDecodeError, ConnectTimeout, ConnectionError
 
 
 def langs():
-    with open("artifacts\supported_langs.json", "r") as supported_languages:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    supported_lang_path = os.path.join(current_dir, '..','artifacts','supported_langs.json')
+    
+    with open(supported_lang_path, "r") as supported_languages:
         langs = json.load(supported_languages)
     return langs
+    # with open("artifacts\supported_langs.json", "r") as supported_languages:
+    #     langs = json.load(supported_languages)
+    # return langs
 
 
 supported_langs = langs()

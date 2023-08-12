@@ -17,9 +17,7 @@ mode = {
 mode_name = [str(mode_name) for mode_name in mode.keys()]
 
 with st.form("paraphrase_form"):
-    default_text = """
-    Paraphrasing text using AI involves leveraging advanced natural language processing (NLP) techniques to rephrase sentences or passages while retaining their original meaning. AI-powered paraphrasing systems utilize large language models trained on diverse textual data to generate alternative phrasings that maintain coherence and context. These systems analyze the input text's structure, semantics, and relationships between words to produce high-quality paraphrased output. This technology finds applications in content creation, language translation, and improving the readability of complex text. By harnessing AI for paraphrasing, users can efficiently transform and enhance their written content, achieving greater clarity and engagement while preserving the intended message.
-    """
+    default_text = """Paraphrasing text using AI involves leveraging advanced natural language processing (NLP) techniques to rephrase sentences or passages while retaining their original meaning. AI-powered paraphrasing systems utilize large language models trained on diverse textual data to generate alternative phrasings that maintain coherence and context. These systems analyze the input text's structure, semantics, and relationships between words to produce high-quality paraphrased output. This technology finds applications in content creation, language translation, and improving the readability of complex text. By harnessing AI for paraphrasing, users can efficiently transform and enhance their written content, achieving greater clarity and engagement while preserving the intended message."""
     with st.sidebar:
         input_text = st.text_area("Enter your text here: ", height = 100, value = default_text)
         if not input_text:

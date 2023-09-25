@@ -1,2 +1,2 @@
 # text_paraphraser
-The same can be used from https://textparaphraser.streamlit.app/
+The paraphraser can be used from https://textparaphraser.streamlit.app/.

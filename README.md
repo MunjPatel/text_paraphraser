@@ -1,2 +1,2 @@
 # text_paraphraser
-This code uses "https://www.paraphraser.io/" API to paraphrase given text.
+The same can be used from https://textparaphraser.streamlit.app/
